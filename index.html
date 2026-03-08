@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MixMaster 🍹</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO INICIAL -->
+    <div class="hero">
+        <h1>🍹 MixMaster</h1>
+
+        <div class="controls">
+
+            <input type="text" id="searchInput" placeholder="Buscar cóctel...">
+            <button id="searchBtn">Buscar</button>
+
+            <select id="categorySelect">
+                <option value="">Categoría</option>
+            </select>
+
+            <select id="ingredientSelect">
+                <option value="">Ingrediente</option>
+            </select>
+
+            <select id="alcoholSelect">
+                <option value="">Tipo</option>
+                <option value="Alcoholic">Alcohólica</option>
+                <option value="Non_Alcoholic">No alcohólica</option>
+            </select>
+
+            <button id="resetBtn">Reiniciar</button>
+
+        </div>
+    </div>
+
+    <p id="statusMessage"></p>
+
+    <div id="cocktailContainer"></div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
